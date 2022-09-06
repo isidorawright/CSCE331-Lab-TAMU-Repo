@@ -1,0 +1,59 @@
+/*navigation bar*/
+ul
+{
+    /*get rid of bullets*/
+    list-style-type: none;
+
+    /*remove browser default settings*/
+    margin: 0;
+    padding: 0;
+    /*A background color is added to the list instead of each link to create a 
+    full-width background color.*/
+    background-color: maroon;
+}
+
+li
+{
+    /*displaying li as inline allows for horizontal navigation bars display: inline;*/
+    /*I will use float to display them as blocks and to float next to each other*/
+    float: left;
+}
+
+/*display: block; - Allows specify padding (and height, width, margins, etc. if you want)
+padding: 8px; - Specify some padding between each <a> element, to make them look good
+background-color: #dddddd; - Add a gray background-color to each <a> element*/
+li a
+{
+    display: block;
+    color: white;
+    background-color: maroon;
+    /*The first num is width and second is spacing between blocks*/
+    padding: 10px 30px;
+}
+
+/*if want to change color while hovering over eack module*/
+li a:hover
+{
+    background-color: deepskyblue;
+}
+
+/*May want to experiment with this. This allows for color over hover that is not the active link
+li a:hover:not(.active) {
+  background-color: red;
+}*/
+
+/*big headers*/
+h1
+{
+    color: black;
+}
+
+p.border
+{
+    color: maroon;
+    border-style: solid;
+    border-radius: 5px;
+    /*first num is top/bottom and second is both sides*/
+    border-width: 2px 2px;
+    border-color: black;
+}
