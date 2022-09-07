@@ -28,7 +28,7 @@ li a
     color: white;
     background-color: maroon;
     /*The first num is width and second is spacing between blocks*/
-    padding: 10px 30px;
+    /*padding: 10px 30px;*/
 }
 
 /*if want to change color while hovering over eack module*/
