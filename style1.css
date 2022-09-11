@@ -12,7 +12,12 @@ ul
     background-color: black;
 }
 
-li
+body
+{
+    background-color: darkblue;
+}
+
+ul li
 {
     /*displaying li as inline allows for horizontal navigation bars display: inline;*/
     /*I will use float to display them as blocks and to float next to each other*/
@@ -22,7 +27,7 @@ li
 /*display: block; - Allows specify padding (and height, width, margins, etc. if you want)
 padding: 8px; - Specify some padding between each <a> element, to make them look good
 background-color: #dddddd; - Add a gray background-color to each <a> element*/
-li a
+ul li a
 {
     display: block;
     color: white;
@@ -46,6 +51,7 @@ li a:hover:not(.active) {
 h1
 {
     color: black;
+    font-family: Arial;
 }
 
 p.border
