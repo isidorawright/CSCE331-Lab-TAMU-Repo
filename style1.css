@@ -109,11 +109,14 @@ strong
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+b
+{
+    display: inline;
+}
+
 p.border
 {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
+    display: block;
     color: black;
     border-style: solid;
     /*first num is top/bottom and second is both sides*/
