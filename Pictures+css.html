@@ -3,7 +3,8 @@
 <head>
     <title>Pictures</title>
     <link rel="stylesheet" type="text/css" href="style1.css">
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="alternate stylesheet" type="text/css" href="style2.css" id="page_style"/>
+    <script src='Project 1 JS.js'></script>
 </head>
 <body>
     <main>
@@ -25,10 +26,9 @@
     <footer>
         <h4>Styles:</h4>
         <nav>
-            <ul>
-                <li><div><a href="Pictures.html">HTML ONLY</a></div></li>
-                <li><div id="button"><a href="Pictures+css.html">Style1</a></div></li>
-                <li><div id="button"><a href="Pictures+css.html">Style2</a></div></li>
+            <ul class="footerBlock">
+                <li><button onclick="button()"><a href="Pictures.html">HTML ONLY</a></button></li>
+                <li><button onclick="button()" class = "switch">Switch Theme</button></li>
             </ul>
         </nav>
     </footer>

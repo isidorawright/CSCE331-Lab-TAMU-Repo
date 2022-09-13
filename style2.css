@@ -13,12 +13,20 @@ ul
     text-decoration: none;    
 }
 
+.picture
+{
+    clip-path: polygon();
+    width: 177px;
+    height: 312px;
+}
+
 ul li
 {
     /*displaying li as inline allows for horizontal navigation bars display: inline;*/
     /*I will use float to display them as blocks and to float next to each other*/
     float: left;
     align-items: center;
+    display: block;
 }
 
 /*display: block; - Allows specify padding (and height, width, margins, etc. if you want)
@@ -60,4 +68,5 @@ p.border
     /*first num is top/bottom and second is both sides*/
     border-width: 2px 2px;
     border-color: black;
+    align-items: center;
 }

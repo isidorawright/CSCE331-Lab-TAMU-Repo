@@ -3,10 +3,10 @@
 <head>
     <title>Professional Presence with CSS</title>
     <link rel="stylesheet" type="text/css" href="style1.css" id="page_style"/>
-    <!--<link rel="stylesheet" type="text/css" href="style2.css" id="page_style"/>-->
+    <link rel="alternate stylesheet" type="text/css" href="style2.css" id="page_style"/>
     <script src='Project 1 JS.js'></script>
 </head>
-<body>
+<body onload= "stay()">
     <!--Header, First element on page-->
     <!--<header>
         DO THIS VIA CSS instead
@@ -31,7 +31,7 @@
     <main>
         <h1>Professional Presence</h1>
             <nav>
-                <ul>
+                <ul class="headerBlock">
                     <li><div><a href="index.html">Landing</a></div></li>
                     <li><div><a href="portfolio+css.html">Portfolio</a></div></li>
                     <li><div><a href="qualifications+css.html">Qualifications</a></div></li>
@@ -43,23 +43,31 @@
         <!--This is the section about me-->
         <div>
             <h1><strong>About Me</strong></h1>
-            <img src="Picture.JPG" class="" width="177" height="312" alt="Photo of Oneself"> <br>
+            <img src="Picture.JPG" class="picture" alt="Photo of Oneself"> <br>
             <big><strong>HOWDY!</strong></big>
 
-            <p class="border">
-                My name is <strong>Isidora Wright!</strong> I am a junior at Texas A&M University, pursuing a Bachelor of Science in 
-                Computer Engineering with a minor in cybersecurity. I am also pursuing a graduate certificate in cybersecurity.
-                I am a part of Aggie Coding Club (ACC) as well as Cybersecurity Club. I have just recently joined the ACC, but I have
-                been in the Cyber Club for one year now. I took a Codepath cybersecurity course last year that covered the basics
-                of cybersecurity. I am the Treasurer for my honor society, IEEE-HKN, for 2022-2023 school year.
-            </p>
-
-            <p>
-                A little about me: I am a twin and an
-                <a href="https://www.verywellfamily.com/irish-twins-meaning-2447174#:~:text=Years%20ago%2C%20when%20two%20children,are%20less%20frequently%20used%2C%20particularly">irish triplet</a>.
-                I am both a team leader and a follower. I believe that it is important to know when to take the lead and when to step down.
-                I believe that a great team is compirsed of people with diverse ideas.
-            </p>
+            <div class="flex-container">
+                <p class="border">
+                    My name is <strong>Isidora Wright!</strong> 
+                    
+                    <br>
+                    <br>
+                    
+                    I am a junior at Texas A&M University, pursuing a Bachelor of Science in 
+                    Computer Engineering with a minor in cybersecurity. I am also pursuing a graduate certificate in cybersecurity.
+                    I am a part of Aggie Coding Club (ACC) as well as Cybersecurity Club. I have just recently joined the ACC, but I have
+                    been in the Cyber Club for one year now. I took a Codepath cybersecurity course last year that covered the basics
+                    of cybersecurity. I am the Treasurer for my honor society, IEEE-HKN, for 2022-2023 school year.
+                    
+                    <br>
+    
+                    A little about me: I am a twin and an <a href="https://www.verywellfamily.com/irish-twins-meaning-2447174#:~:text=Years%20ago%2C%20when%20two%20children,are%20less%20frequently%20used%2C%20particularly">irish triplet</a>.
+                    I am both a team leader and a follower. I believe that it is important to know when to take the lead and when to step down.
+                    I believe that a great team is compirsed of people with diverse ideas. As an engineer, it is a good thing to think outside
+                    the box. I like when many people from different backgrounds and experiences are able to put their minds together to create an effective
+                    and functioning product.
+                </p>
+            </div>
 
             <h2>OverView:</h2>
             <p class="border">
@@ -94,7 +102,7 @@
     <footer>
         <h4>Styles:</h4>
         <nav>
-            <ul>
+            <ul class="footerBlock">
                 <li><button onclick="button()"><a href="index_HTMLONLY.html">HTML ONLY</a></button></li>
                 <li><button onclick="button()" class = "switch">Switch Theme</button></li>
             </ul>
