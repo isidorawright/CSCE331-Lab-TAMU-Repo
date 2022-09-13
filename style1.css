@@ -11,8 +11,52 @@ ul
     full-width background color.*/
     background-color: none;
     text-decoration: none;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
+img
+{
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    padding: 0;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/*@media (max-aspect-ratio: 1/1) {
+    li {
+      height: 30vh;
+    }
+  }
+  
+  
+  @media (max-height: 480px) {
+    li {
+      height: 80vh;
+    }
+  }
+  
+
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    li {
+      height: auto;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
+*/
 header
 {
     background: none;
@@ -32,6 +76,7 @@ body
     height: 312px;
     border-radius: 50%;
     overflow: hidden;
+    padding: 0;
 }
 
 /*display: block; - Allows specify padding (and height, width, margins, etc. if you want)
@@ -50,13 +95,14 @@ ul li
 /*display: block; - Allows specify padding (and height, width, margins, etc. if you want)
 padding: 8px; - Specify some padding between each <a> element, to make them look good
 background-color: #dddddd; - Add a gray background-color to each <a> element*/
-ul li a .headerBlock
+.headerBlock
 {
     
     display: block;
     block-size: 20px 20px;
     color: black;
     background-color: none;
+    background-color: red;
     /*The first num is width and second is spacing between blocks*/
     /*padding: 10px 30px;*/
 }
@@ -67,7 +113,6 @@ ul li a .footerBlock
     display: block;
     block-size: 20px 20px;
     color: black;
-    background-color: none;
     /*The first num is width and second is spacing between blocks*/
     /*padding: 10px 30px;*/
 }
@@ -125,17 +170,22 @@ p.border
     background-color: pink;
 }
 
+ol.border
+{
+    display: block;
+    color: black;
+    border-style: solid;
+    /*first num is top/bottom and second is both sides*/
+    /*border-width: 2px 2px;*/
+    border-color: pink;
+    background-color: pink;
+}
+
 .flex-container
 {
     display: flex;
-    flex-direction: column;
+    width: 600px;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-p a
-{
-    display:inline;
-    border: none;
+    justify-content: center;
+    align-items: center;
 }
