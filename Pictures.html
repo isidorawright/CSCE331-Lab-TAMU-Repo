@@ -2,30 +2,75 @@
 <html lang="en">
 <head>
     <title>Pictures</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="alternate stylesheet" type="text/css" href="style2.css" id="page_style"/>
+    <script src='Project 1 JS.js'></script>
 </head>
 <body>
     <main>
         <h1>Pictures</h1>
         <nav>
             <ul>
-                <li><div id="button"><a href="index_HTMLONLY.html">Landing</a></div></li>
+                <li><div id="button"><a href="index.html">Landing</a></div></li>
                 <li><div id="button"><a href="portfolio.html">Portfolio</a></div></li>
                 <li><div id="button"><a href="qualifications.html">Qualifications</a></div></li>
                 <li><div id="button"><a href="service.html">Service</a></div></li>
                 <li><div id="button"><a href="Pictures.html">Pictures</a></div></li>
             </ul>
         </nav>
+        <br>
+        <br>
+        <p class="border">To see all pictures, here is the link to the album: <a href="https://photos.app.goo.gl/sm8dFYViYXPycaLJ7">Pictures</a>.
+            This album contains a mix of Idaho Falls, Idaho and Albuquerque, New Mexico!
+        </p>
+<ul>
+  <li>
+    <img src="INL Plaque.JPG" alt="Idaho National Lab">
+  </li>
+  <li>
+    <img src="INL Airport.JPG" alt="INL Airport">
+  </li>
+  <li>
+    <img src="Flags.JPG" alt="Flags">
+  </li>
+  <li>
+    <img src="Group.JPG" alt="Group INL">
+  </li>
+  <li>
+    <img src="Welcome.JPG" alt="Welcome to Idaho Falls!">
+  </li>
+  <li>
+    <img src="INL Sign.JPG" alt="INL Sign">
+  </li>
+  <li>
+    <img src="ONE.JPG" alt="Nuclear Energy Sign">
+  </li>
+  <li>
+    <img src="ABQ Sign.JPG" alt="ABQ Sign">
+  </li>
+  <li>
+    <img src="ABQ Clock.HEIC" alt="ABQ Clock">
+  </li>
+  <li>
+    <img src="CERI Sign.JPG" alt="CERI Sign">
+  </li>
+  <li>
+    <img src="TracerFire Token.JPG" alt="TracerFire Token">
+  </li>
+  
+  <!--  Adding an empty <li> here so the final photo doesn't stretch. -->
+  <li></li>
+</ul>
     
-        <p>To see all pictures, here is the link to the album: <a href="https://photos.app.goo.gl/sm8dFYViYXPycaLJ7">Pictures</a></p>.
-        This album contains a mix of Idaho Falls, Idaho and Albuquerque, New Mexico!</p>
     </main>
     <footer>
-        <h4>Styles:</h4>
-        <nav>
-            <ul>
-                <li><div id="button"><a href="Pictures+css.html">Style1</a></div></li>
-            </ul>
-        </nav>
-    </footer>
+      <h4>Styles:</h4>
+      <nav>
+          <ul>
+              <!--<li><button onclick="button()"><a href="Pictures.html">HTML ONLY</a></button></li>-->
+              <li><button onclick="button()" class = "switch">Switch Theme</button></li>
+          </ul>
+      </nav>
+  </footer>
 </body>
 </html>

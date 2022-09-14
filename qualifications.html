@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>Qualifications</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="alternate stylesheet" type="text/css" href="style2.css" id="page_style"/>
+    <script src='Project 1 JS.js'></script>
 </head>
 <body>
     <main>
@@ -12,16 +15,16 @@
             <nav>
                 <ul>
                     <li><div id="button"><a href="index.html">Landing</a></div></li>
-                    <li><div id="button"><a href="portfolio+css.html">Portfolio</a></div></li>
-                    <!--<div id="button"><a href="qualifications.html">Qualifications</a></div>-->
-                    <li><div id="button"><a href="service+css.html">Service</a></div></li>
-                    <li><div id="button"><a href="Pictures+css.html">Pictures</a></div></li>
+                    <li><div id="button"><a href="portfolio.html">Portfolio</a></div></li>
+                    <li><div id="button"><a href="qualifications.html">Qualifications</a></div></li>
+                    <li><div id="button"><a href="service.html">Service</a></div></li>
+                    <li><div id="button"><a href="Pictures.html">Pictures</a></div></li>
                 </ul>
             </nav>
             <br>
         <!--</div>-->
         <br>
-        <!--<div>-->
+        <div class="flex-container">
             <p class="border">
                 I have recently joined the <a href="http://www.aggiecodingclub.com/">Aggie Coding Club</a>.
                 I have been in the Cybersecurity Club for one year. Inside, I have completed a cybersecurity
@@ -33,29 +36,23 @@
 
             <h4>Computer Engineering:</h4>
 
-            <p>
+            <p class="border">
                 My major is Computer Engineering; a combination of both computer hardware and software.
                 I find both the hardware and software aspects of computers to be very fascinating.
-            </p>
 
-            <p>
                 The reason I chose this major is because of two reasons:
-            </p>
-                
-            <ol>
-                <li>
-                    My father was an Electrical Engineer. Therefore, I grew up doing various projects
-                    with him around the house (both electrical and non-electrical related). But I knew
-                    that I wanted to work with more than just the hardware of computers and other appliances.
-                </li>
-                <li>
-                    I took an AP coding course in high school and instantly fell in love with coding.
-                </li>
-            </ol>
 
-            <br>
-            <br>
-            <br>
+                <ol class="border">
+                    <li>
+                        My father was an Electrical Engineer. Therefore, I grew up doing various projects
+                        with him around the house (both electrical and non-electrical related). But I knew
+                        that I wanted to work with more than just the hardware of computers and other appliances.
+                    </li>
+                    <li>
+                        I took an AP coding course in high school and instantly fell in love with coding.
+                    </li>
+                </ol>
+            </p>
 
             <p class="border">
                 I put those two together and I found computer engineering.
@@ -69,27 +66,28 @@
 
             <h4>Cybersecurity:</h4>
 
-            <p>
+            <p class="border">
                 My technical interests in this field are: incident response, pentesting, designing systems, etc. 
                 After having experience in non-technical assessments aspect of cybersecurity, I know that I want
                 to work in the technical side of cybersecurity.
             </p>
-        <!--</div>-->
         <!--I should include a pdf of my resume in this section-->
-        <!--<div>-->
-            <p>
-                <h3>Resume</h3>
+        
+            <h3>Resume:</h3>
+
+            <p class="border">
                 <nav>
-                    Here is a PDF of my resume: <a href="Cyber Internship Resume.pdf">Resume</a>
+                    Here is a PDF of my resume: <a href="Resume 2022.pdf"><strong>Resume</strong></a>
                 </nav>
             </p>
-        <!--</div>-->
+        </div>
     </main>
     <footer>
         <h4>Styles:</h4>
         <nav>
             <ul>
-                <li><div id="button"><a href="qualifications+css.html">Style1</a></div></li>
+                <!--<li><button onclick="button()"><a href="qualifications.html">HTML ONLY</a></button></li>-->
+                <li><button onclick="button()" class = "switch">Switch Theme</button></li>
             </ul>
         </nav>
     </footer>
