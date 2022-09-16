@@ -14,6 +14,11 @@ function button()
 
 function loadStyle()
 {
+  if (localStorage.getItem("page_style") === null) 
+  {
+    document.getElementById("page_style").setAttribute('href', 'style1.css');
+    let style = localStorage.setItem("currentStyle", "style1.css");
+  }
   style = localStorage.getItem("currentStyle");
   document.getElementById("page_style").setAttribute('href', style);
 }
