@@ -70,3 +70,13 @@ p.border
     border-color: black;
     align-items: center;
 }
+
+img
+{
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    padding: 0;
+    object-fit: cover;
+    vertical-align: bottom;
+}
